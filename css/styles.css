@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --background-body: #f2f2f2;
+  --color-default: #fff;
+  --color-regular: #000;
+  --color-inherit: #48555b;
+  --color-select: #00A4E5;
+}
 html {
   box-sizing: border-box;
 }
@@ -7,5 +15,104 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.77;
+  letter-spacing: 0.01em;
+  color: var(--color-inherit);
+  background-color: var(--background-body);
   margin: 0;
+}
+
+.container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-default);
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: #3a6a80;
+  background-image: url("../images/backgrounds/main-background-image.png");
+  background-size: 100% 770px;
+  background-repeat: no-repeat;
+  width: 1440px;
+  min-height: 835px;
+  text-align: center;
+  padding: 41px 0 0;
+}
+.logo {
+}
+.page-header__subtitle {
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--color-default);
+  text-transform: uppercase;
+  margin: 317px 0 0;
+}
+.page-header__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-default);
+  margin: 0 0 221px;
+}
+.page-header__caption {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.34em;
+  color: var(--color-default);
+  margin: 0 0 32px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  background-color: var(--color-default);
+  padding: 0 250px;
+}
+.navigation__list {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-inherit);
+  padding: 20px 0;
+
+  &:hover,
+  &:focus {
+    color: var(--color-select);
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.logo-link {
+  display: block;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+.logo-link__logo-image {
+  display: block;
+  margin: 0 auto;
 }
